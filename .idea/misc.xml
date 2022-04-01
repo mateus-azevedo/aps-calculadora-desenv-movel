@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/layout/activity_main.xml" value="0.3582427536231884" />
+        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2095" />
+        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/drawable/calculator.xml" value="0.2095" />
+        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/drawable/ic_calculator.xml" value="0.2095" />
+        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2095" />
+        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/drawable/ic_launcher_calculator.xml" value="0.16" />
+        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/drawable/splashscreen_gradient.xml" value="0.2095" />
+        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/drawable/splashscreen_gradient_selector.xml" value="0.2095" />
+        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/mateu/dev/studies/learning-tecnologies/kotlin/calculator_aps_da_moveis/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2095" />
       </map>
     </option>
   </component>
