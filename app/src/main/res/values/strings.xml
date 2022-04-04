@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora APS</string>
+    <string name="insert_first_number">Insira o primeiro numero</string>
+    <string name="insert_second_number">Insira o secundo numero</string>
+    <string name="result">RESULTADO:</string>
+    <string name="sum_signal">+</string>
+    <string name="sub_signal">-</string>
+    <string name="multi_signal">*</string>
+    <string name="div_signal">/</string>
+    <string name="erase_fields">C</string>
+</resources>
