@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/firstNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="263dp"
+        android:layout_height="52dp"
         android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="@string/insert_first_number"
@@ -20,8 +20,8 @@
 
     <EditText
         android:id="@+id/secondNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="263dp"
+        android:layout_height="52dp"
         android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="@string/insert_second_number"
