@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/secondNumber" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSum"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="52dp"
@@ -62,39 +62,39 @@
         app:layout_constraintTop_toBottomOf="@+id/tvResult" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonSub"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:onClick="subOperation"
         android:text="@string/sub_signal"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/buttonSum"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSum" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonMulti"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="52dp"
         android:onClick="multiOperation"
         android:text="@string/multi_signal"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/buttonSum"
         app:layout_constraintTop_toBottomOf="@+id/tvResult" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonDiv"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:onClick="divOperation"
         android:text="@string/div_signal"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/buttonSub"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMulti" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonErase"
         android:layout_width="56dp"
         android:layout_height="137dp"
         android:layout_marginTop="52dp"
@@ -103,6 +103,6 @@
         android:text="@string/erase_fields"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/buttonMulti"
         app:layout_constraintTop_toBottomOf="@+id/tvResult" />
 </androidx.constraintlayout.widget.ConstraintLayout>
