@@ -99,6 +99,7 @@
         android:layout_height="137dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="72dp"
+        android:onClick="clearLabels"
         android:text="@string/erase_fields"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"

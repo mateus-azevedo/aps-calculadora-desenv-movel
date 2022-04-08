@@ -108,6 +108,14 @@ public class CalculatorActivity extends AppCompatActivity {
         tvOperationSignal.setText("/");
     }
 
+    public void clearLabels(View view) {
+        etNum1 = (EditText) findViewById(R.id.firstNumber);
+        etNum2 = (EditText) findViewById(R.id.secondNumber);
+
+        etNum1.setText("");
+        etNum2.setText("");
+    }
+
     private Boolean isLabelBlank(EditText input) {
         if (input.getText().toString().length() == 0) {
             input.setError("Por favor insira um número no campo");
