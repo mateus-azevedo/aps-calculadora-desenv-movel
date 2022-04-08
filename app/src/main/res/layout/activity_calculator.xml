@@ -11,24 +11,34 @@
         android:layout_width="263dp"
         android:layout_height="52dp"
         android:layout_marginTop="48dp"
+        android:background="@color/material_dynamic_neutral_variant95"
         android:ems="10"
         android:hint="@string/insert_first_number"
         android:inputType="number"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#7E57C2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/secondNumber"
         android:layout_width="263dp"
         android:layout_height="52dp"
         android:layout_marginTop="48dp"
+        android:background="@color/material_dynamic_neutral_variant95"
         android:ems="10"
         android:hint="@string/insert_second_number"
         android:inputType="number"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#7E57C2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/firstNumber"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/tvOperationSignal"
