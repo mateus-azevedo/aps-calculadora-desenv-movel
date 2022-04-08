@@ -10,7 +10,8 @@
         android:id="@+id/firstNumber"
         android:layout_width="263dp"
         android:layout_height="52dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="100dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/insert_first_number"
         android:inputType="number"
@@ -18,8 +19,7 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/secondNumber"
