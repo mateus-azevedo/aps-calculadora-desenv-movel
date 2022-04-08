@@ -29,22 +29,19 @@ public class CalculatorActivity extends AppCompatActivity {
         tvOperationSignal = (TextView) findViewById(R.id.tvOperationSignal);
 
         if (isLabelBlank(etNum1)) {
-            Log.i("isLabelBlank etnum1","yes, is blank");
-        } else {
-            Log.i("isLabelBlank etnum1","no, is not blank");
+            Log.i("isLabelBlank etnum1","yes, is blank on sumOperation");
+            return;
+        } else if (isLabelBlank(etNum2)) {
+            Log.i("isLabelBlank etnum2", "yes, is blank on sumOperation");
+            return;
         }
 
-        if (isLabelBlank(etNum2)) {
-            Log.i("isLabelBlank etnum2","yes, is blank");
-        } else {
-            Log.i("isLabelBlank etnum2","no, is not blank");
-        }
-//        int num1 = Integer.parseInt(etNum1.getText().toString());
-//        int num2 = Integer.parseInt(etNum2.getText().toString());
-//        int resultSum = num1 + num2;
-//
-//        tvResult.setText(String.valueOf(resultSum));
-//        tvOperationSignal.setText("+");
+        int num1 = Integer.parseInt(etNum1.getText().toString());
+        int num2 = Integer.parseInt(etNum2.getText().toString());
+        int resultSum = num1 + num2;
+
+        tvResult.setText(String.valueOf(resultSum));
+        tvOperationSignal.setText("+");
     }
 
     public void subOperation(View view) {
