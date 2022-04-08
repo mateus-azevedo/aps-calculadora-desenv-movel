@@ -111,9 +111,13 @@ public class CalculatorActivity extends AppCompatActivity {
     public void clearLabels(View view) {
         etNum1 = (EditText) findViewById(R.id.firstNumber);
         etNum2 = (EditText) findViewById(R.id.secondNumber);
+        tvOperationSignal = (TextView) findViewById(R.id.tvOperationSignal);
+        tvResult = (TextView) findViewById(R.id.tvResult);
 
         etNum1.setText("");
         etNum2.setText("");
+        tvOperationSignal.setText("");
+        tvResult.setText("");
     }
 
     private Boolean isLabelBlank(EditText input) {
