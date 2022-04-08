@@ -18,8 +18,6 @@ public class CalculatorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
-
-
     }
 
     public void sumOperation(View view) {
@@ -29,7 +27,7 @@ public class CalculatorActivity extends AppCompatActivity {
         tvOperationSignal = (TextView) findViewById(R.id.tvOperationSignal);
 
         if (isLabelBlank(etNum1)) {
-            Log.i("isLabelBlank etnum1","yes, is blank on sumOperation");
+            Log.i("isLabelBlank etnum1", "yes, is blank on sumOperation");
             return;
         } else if (isLabelBlank(etNum2)) {
             Log.i("isLabelBlank etnum2", "yes, is blank on sumOperation");
@@ -51,7 +49,7 @@ public class CalculatorActivity extends AppCompatActivity {
         tvOperationSignal = (TextView) findViewById(R.id.tvOperationSignal);
 
         if (isLabelBlank(etNum1)) {
-            Log.i("isLabelBlank etnum1","yes, is blank on subOperation");
+            Log.i("isLabelBlank etnum1", "yes, is blank on subOperation");
             return;
         } else if (isLabelBlank(etNum2)) {
             Log.i("isLabelBlank etnum2", "yes, is blank on subOperation");
@@ -73,7 +71,7 @@ public class CalculatorActivity extends AppCompatActivity {
         tvOperationSignal = (TextView) findViewById(R.id.tvOperationSignal);
 
         if (isLabelBlank(etNum1)) {
-            Log.i("isLabelBlank etnum1","yes, is blank on multiOperation");
+            Log.i("isLabelBlank etnum1", "yes, is blank on multiOperation");
             return;
         } else if (isLabelBlank(etNum2)) {
             Log.i("isLabelBlank etnum2", "yes, is blank on multiOperation");
@@ -95,7 +93,7 @@ public class CalculatorActivity extends AppCompatActivity {
         tvOperationSignal = (TextView) findViewById(R.id.tvOperationSignal);
 
         if (isLabelBlank(etNum1)) {
-            Log.i("isLabelBlank etnum1","yes, is blank on divOperation");
+            Log.i("isLabelBlank etnum1", "yes, is blank on divOperation");
             return;
         } else if (isLabelBlank(etNum2)) {
             Log.i("isLabelBlank etnum2", "yes, is blank on divOperation");
@@ -108,6 +106,14 @@ public class CalculatorActivity extends AppCompatActivity {
 
         tvResult.setText(String.valueOf(resultSum));
         tvOperationSignal.setText("/");
+    }
+
+    public void clearLabels(View view) {
+        etNum1 = (EditText) findViewById(R.id.firstNumber);
+        etNum2 = (EditText) findViewById(R.id.secondNumber);
+
+        etNum1.setText("");
+        etNum2.setText("");
     }
 
     private Boolean isLabelBlank(EditText input) {
