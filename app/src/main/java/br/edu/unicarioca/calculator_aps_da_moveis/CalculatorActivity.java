@@ -50,6 +50,14 @@ public class CalculatorActivity extends AppCompatActivity {
         tvResult = (TextView) findViewById(R.id.tvResult);
         tvOperationSignal = (TextView) findViewById(R.id.tvOperationSignal);
 
+        if (isLabelBlank(etNum1)) {
+            Log.i("isLabelBlank etnum1","yes, is blank on subOperation");
+            return;
+        } else if (isLabelBlank(etNum2)) {
+            Log.i("isLabelBlank etnum2", "yes, is blank on subOperation");
+            return;
+        }
+
         int num1 = Integer.parseInt(etNum1.getText().toString());
         int num2 = Integer.parseInt(etNum2.getText().toString());
         int resultSum = num1 - num2;
@@ -64,6 +72,14 @@ public class CalculatorActivity extends AppCompatActivity {
         tvResult = (TextView) findViewById(R.id.tvResult);
         tvOperationSignal = (TextView) findViewById(R.id.tvOperationSignal);
 
+        if (isLabelBlank(etNum1)) {
+            Log.i("isLabelBlank etnum1","yes, is blank on multiOperation");
+            return;
+        } else if (isLabelBlank(etNum2)) {
+            Log.i("isLabelBlank etnum2", "yes, is blank on multiOperation");
+            return;
+        }
+
         int num1 = Integer.parseInt(etNum1.getText().toString());
         int num2 = Integer.parseInt(etNum2.getText().toString());
         int resultSum = num1 * num2;
@@ -77,6 +93,14 @@ public class CalculatorActivity extends AppCompatActivity {
         etNum2 = (EditText) findViewById(R.id.secondNumber);
         tvResult = (TextView) findViewById(R.id.tvResult);
         tvOperationSignal = (TextView) findViewById(R.id.tvOperationSignal);
+
+        if (isLabelBlank(etNum1)) {
+            Log.i("isLabelBlank etnum1","yes, is blank on divOperation");
+            return;
+        } else if (isLabelBlank(etNum2)) {
+            Log.i("isLabelBlank etnum2", "yes, is blank on divOperation");
+            return;
+        }
 
         int num1 = Integer.parseInt(etNum1.getText().toString());
         int num2 = Integer.parseInt(etNum2.getText().toString());
