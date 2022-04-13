@@ -32,6 +32,51 @@
         android:ellipsize="end"
         android:maxLines="1"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/operators_button"
+            android:layout_weight="3"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            style="@style/operators_button"
+            android:text="/" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_seven"
+            style="@style/numbers_button"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn_eight"
+            style="@style/numbers_button"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_nine"
+            style="@style/numbers_button"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnMulti"
+            style="@style/operators_button"
+            android:text="*"/>
+    </LinearLayout>
+
 
 <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
 <!--        android:layout_width="match_parent"-->
