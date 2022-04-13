@@ -74,7 +74,93 @@
         <Button
             android:id="@+id/btnMulti"
             style="@style/operators_button"
-            android:text="*" />
+            android:text="X" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_four"
+            style="@style/numbers_button"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_five"
+            style="@style/numbers_button"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_six"
+            style="@style/numbers_button"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnSub"
+            style="@style/operators_button"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_one"
+            style="@style/numbers_button"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_two"
+            style="@style/numbers_button"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_three"
+            style="@style/numbers_button"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnSum"
+            style="@style/operators_button"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dot"
+            style="@style/numbers_button"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btn_zero"
+            style="@style/numbers_button"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/btn_backspace"
+            style="@style/numbers_button"
+            android:src="@drawable/backspace"
+            android:scaleType="center" />
+
+        <Button
+            android:id="@+id/btnEqual"
+            style="@style/operators_button"
+            android:text="=" />
+
     </LinearLayout>
 
 </LinearLayout>
