@@ -19,7 +19,7 @@ public class CalculatorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
     }
-
+/*
     public void sumOperation(View view) {
         etNum1 = (EditText) findViewById(R.id.firstNumber);
         etNum2 = (EditText) findViewById(R.id.secondNumber);
@@ -128,4 +128,6 @@ public class CalculatorActivity extends AppCompatActivity {
 
         return false;
     }
+
+ */
 }
