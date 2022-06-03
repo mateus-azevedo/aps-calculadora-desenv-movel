@@ -16,19 +16,19 @@
         android:ellipsize="start"
         android:gravity="end"
         android:singleLine="true"
-        android:text="5+5"
+        android:text="@string/algebraic_expression"
         android:textColor="@color/black"
         android:textSize="40sp" />
 
     <TextView
-        android:id="@+id/txt_resutlado"
+        android:id="@+id/txt_result"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginEnd="10dp"
         android:ellipsize="end"
         android:gravity="end"
         android:maxLines="1"
-        android:text="10"
+        android:text="@string/result_txt"
         android:textColor="@color/black"
         android:textSize="30sp" />
 
@@ -42,12 +42,13 @@
             android:id="@+id/btn_clear"
             style="@style/operators_button"
             android:layout_weight="3"
-            android:text="C" />
+            android:layout_width="0dp"
+            android:text="@string/erase_fields" />
 
         <Button
             android:id="@+id/btnDiv"
             style="@style/operators_button"
-            android:text="/" />
+            android:text="@string/div_signal" />
     </LinearLayout>
 
     <LinearLayout
@@ -59,22 +60,22 @@
         <Button
             android:id="@+id/btn_seven"
             style="@style/numbers_button"
-            android:text="7" />
+            android:text="@string/number_seven" />
 
         <Button
             android:id="@+id/btn_eight"
             style="@style/numbers_button"
-            android:text="8" />
+            android:text="@string/number_eight" />
 
         <Button
             android:id="@+id/btn_nine"
             style="@style/numbers_button"
-            android:text="9" />
+            android:text="@string/number_nine" />
 
         <Button
             android:id="@+id/btnMulti"
             style="@style/operators_button"
-            android:text="X" />
+            android:text="@string/multi_signal" />
 
     </LinearLayout>
 
@@ -87,22 +88,22 @@
         <Button
             android:id="@+id/btn_four"
             style="@style/numbers_button"
-            android:text="4" />
+            android:text="@string/number_four" />
 
         <Button
             android:id="@+id/btn_five"
             style="@style/numbers_button"
-            android:text="5" />
+            android:text="@string/number_five" />
 
         <Button
             android:id="@+id/btn_six"
             style="@style/numbers_button"
-            android:text="6" />
+            android:text="@string/number_six" />
 
         <Button
             android:id="@+id/btnSub"
             style="@style/operators_button"
-            android:text="-" />
+            android:text="@string/sub_signal" />
 
     </LinearLayout>
 
@@ -115,22 +116,22 @@
         <Button
             android:id="@+id/btn_one"
             style="@style/numbers_button"
-            android:text="1" />
+            android:text="@string/number_one" />
 
         <Button
             android:id="@+id/btn_two"
             style="@style/numbers_button"
-            android:text="2" />
+            android:text="@string/number_two" />
 
         <Button
             android:id="@+id/btn_three"
             style="@style/numbers_button"
-            android:text="3" />
+            android:text="@string/number_three" />
 
         <Button
             android:id="@+id/btnSum"
             style="@style/operators_button"
-            android:text="+" />
+            android:text="@string/sum_signal" />
 
     </LinearLayout>
 
@@ -143,23 +144,24 @@
         <Button
             android:id="@+id/btn_dot"
             style="@style/numbers_button"
-            android:text="." />
+            android:text="@string/dot_signal" />
 
         <Button
             android:id="@+id/btn_zero"
             style="@style/numbers_button"
-            android:text="0" />
+            android:text="@string/number_zero" />
 
         <ImageView
             android:id="@+id/btn_backspace"
             style="@style/numbers_button"
-            android:src="@drawable/backspace"
-            android:scaleType="center" />
+            android:contentDescription="@string/backspace_description"
+            android:scaleType="center"
+            android:src="@drawable/backspace" />
 
         <Button
             android:id="@+id/btnEqual"
             style="@style/operators_button"
-            android:text="=" />
+            android:text="@string/equal_signal" />
 
     </LinearLayout>
 
