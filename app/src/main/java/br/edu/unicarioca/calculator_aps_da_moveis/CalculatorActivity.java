@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import net.objecthunter.exp4j.Expression;
+import net.objecthunter.exp4j.ExpressionBuilder;
+
 public class CalculatorActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btn_zero, btn_one, btn_two, btn_three, btn_four, btn_five, btn_six, btn_seven,
             btn_eight, btn_nine, btn_sum, btn_sub, btn_multi, btn_div, btn_equal, btn_clear,btn_dot;
@@ -65,6 +68,26 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
                 txt_result.setText("");
             }
         });
+
+        btn_equal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Expression expression = new ExpressionBuilder(txt_expression.getText().toString()).build();
+
+                    double result = expression.evaluate();
+                    long longResult = (long) result;
+
+                    if (result == (double) longResult) {
+                        txt_result.setText((CharSequence) String.valueOf(longResult));
+                    } else {
+                        txt_result.setText((CharSequence) String.valueOf(result));
+                    }
+                } catch (Exception e) {
+                    Log.d("Try equal", e.toString());
+                }
+            }
+        });
     }
 
     private void initialize() {
@@ -93,16 +116,16 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
     public void changeTextExpression(String string, boolean clear) {
 
         if (txt_result.getText().equals("")) {
-            txt_expression.setText("");
+            txt_expression.setText(" ");
         }
 
         if (clear) {
-            txt_result.setText("");
+            txt_result.setText(" ");
             txt_expression.append(string);
         } else {
             txt_expression.append(txt_result.getText());
             txt_expression.append(string);
-            txt_result.setText("");
+            txt_result.setText(" ");
         }
 
     }
